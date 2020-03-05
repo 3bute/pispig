@@ -1,4 +1,3 @@
-#include <string.h>
 #include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -11,7 +10,6 @@ int main(int argc, char** argv) {
     digits = strtod(*++argv, 0);
   }
   
-  char* out = malloc(sizeof(char) * digits + 1);
   int len = 10 * digits / 3
     , A[len]
     , res[digits + 1]
